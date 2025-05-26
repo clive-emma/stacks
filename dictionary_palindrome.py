@@ -1,5 +1,5 @@
 from datetime import datetime
-from StackChallengePalindrome import is_palindrome_using_stack
+from palindromeStack import is_palindrome
 
 start_time = datetime.now()
 
@@ -21,7 +21,7 @@ test_cases = [
 ]
 
 for text, expected, mk in test_cases:
-    result = is_palindrome_using_stack(text)
+    result = is_palindrome(text)
     if result == expected:
         print(f"✓ Test passed for: '{text[:30]}...' (+{mk})")
         _crypt_toll += mk
